@@ -10,3 +10,7 @@
   - Creating Refs. Refs are created using React.createRef() and attached to React elements via the ref attribute. Refs are commonly assigned to an instance property when a component is constructed so they can be referenced throughout the component.
   - Accessing Refs: When a ref is passed to an element in render, a reference to the node becomes accessible at the current attribute of the ref. (Pro_5.js)
   - Inpuuts when pressed enter the focus goes to next input. (Pro_6.js)
+- 4) Pure Components:
+  - shouldComponentUpdate
+  - PureComponent
+  - Note: We must use PureComponent in very simple states, if the state was complex don't use PureComponent
