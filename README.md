@@ -10,7 +10,9 @@
   - Creating Refs. Refs are created using React.createRef() and attached to React elements via the ref attribute. Refs are commonly assigned to an instance property when a component is constructed so they can be referenced throughout the component.
   - Accessing Refs: When a ref is passed to an element in render, a reference to the node becomes accessible at the current attribute of the ref. (Pro_5.js)
   - Inpuuts when pressed enter the focus goes to next input. (Pro_6.js)
-- 4) Pure Components:
+- 4) Pure Components: (Pro_7.js)
   - shouldComponentUpdate
   - PureComponent
   - Note: We must use PureComponent in very simple states, if the state was complex don't use PureComponent
+- 5) useState Hook: (Pro_8.js)
+  - The useState hook allows us to use state in our functional component. A useState hook takes the initial value of our state as the only argument, and it returns an array of two elements. The first element is our state variable and the second element is a function in which we can use to update the value os the state variable.
