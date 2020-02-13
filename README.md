@@ -22,13 +22,13 @@
 - 5) useState Hook: (Pro_8.js)
   - The useState hook allows us to use state in our functional component. A useState hook takes the initial value of our state as the only argument, and it returns an array of two elements. The first element is our state variable and the second element is a function in which we can use to update the value os the state variable.
 
-- 6) Context API:
+- 6) Context API: (Pro_9.js)
   - Context provides a way to pass data through the component tree without having to pass props down manually at every level.
   - For a more in-depth definition, it provides a way for you to make particular data available to all components throughout the component tree no matter how deeply nested that component may be.
   - First we have a Provider - The Provider component is where the data lives. In the provider component we return a context provider.
   - Second we have a Consumer - The Consumer is where we want to access the data. The child of consumer will always be a function.
 
-- 7) Error Boundaries:
+- 7) Error Boundaries: (Pro_10.js & ErrorBoundary.js)
   - Run time errors during rendering react puts our application in broken state, react basically unmounts the whole react component tree. It will be great if it could catch the errors anywhere in the component tree and display a fall-back UI, this is where Error Boundaries take the spotlight.
   - What is Error Boundary: A class component that implements either one or both of the lifecycle mthods getDerivedStateFromError or componentDidCatch becomes an error boundary.
   - Error handling phase includes two lifecycle methods
