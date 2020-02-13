@@ -7,6 +7,7 @@ import Pro_5 from './components/Pro_5';
 import Pro_6 from './components/Pro_6';
 import Pro_7 from './components/Pro_7';
 import Pro_8 from './components/Pro_8';
+import Pro_9 from './components/Pro_9';
 
 function App() {
   return (
@@ -15,10 +16,11 @@ function App() {
       <Pro_2 />
       <Pro_3 />
       <Pro_4 />
-      <Pro_5 /> */}
-      {/* <Pro_6 /> */}
-      {/* <Pro_7 /> */}
-      <Pro_8 />
+      <Pro_5 />
+      <Pro_6 />
+      <Pro_7 />
+      <Pro_8 /> */}
+      <Pro_9 />
     </div>
   );
 }
