@@ -27,3 +27,11 @@
   - For a more in-depth definition, it provides a way for you to make particular data available to all components throughout the component tree no matter how deeply nested that component may be.
   - First we have a Provider - The Provider component is where the data lives. In the provider component we return a context provider.
   - Second we have a Consumer - The Consumer is where we want to access the data. The child of consumer will always be a function.
+
+- 7) Error Boundaries:
+  - Run time errors during rendering react puts our application in broken state, react basically unmounts the whole react component tree. It will be great if it could catch the errors anywhere in the component tree and display a fall-back UI, this is where Error Boundaries take the spotlight.
+  - What is Error Boundary: A class component that implements either one or both of the lifecycle mthods getDerivedStateFromError or componentDidCatch becomes an error boundary.
+  - Error handling phase includes two lifecycle methods
+    - static getDerivedStateFromError(error)
+    - componentDidCatch(error, info)
+  - The static method getDerivedStateFromError method is used to render a fallback UI after an error is thrown and the componentDidCatch method is used to log the error information.

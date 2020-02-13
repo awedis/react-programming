@@ -8,6 +8,8 @@ import Pro_6 from './components/Pro_6';
 import Pro_7 from './components/Pro_7';
 import Pro_8 from './components/Pro_8';
 import Pro_9 from './components/Pro_9';
+import Pro_10 from './components/Pro_10';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
@@ -20,7 +22,19 @@ function App() {
       <Pro_6 />
       <Pro_7 />
       <Pro_8 /> */}
-      <Pro_9 />
+      {/* <Pro_9 /> */}
+
+      <ErrorBoundary>
+        <Pro_10 heroName="Batman" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Pro_10 heroName="Superman" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Pro_10 heroName="Joker" />
+      </ErrorBoundary>
+
+
     </div>
   );
 }
