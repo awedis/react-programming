@@ -35,3 +35,9 @@
     - static getDerivedStateFromError(error)
     - componentDidCatch(error, info)
   - The static method getDerivedStateFromError method is used to render a fallback UI after an error is thrown and the componentDidCatch method is used to log the error information.
+
+- 8) React Router: (Pro_11.js)
+  - Route, Link, NavLink, Redirect, Prompt
+  - Install React Router:
+    - npm install react-router-dom --save
+  - React router uses regular expressions to do the url mapping, so we use exact to differentiate between the other routes. and strict (for ex. /about/ or /about works without strict) but if we want only /about/ work so we provide strict tag in Route.
