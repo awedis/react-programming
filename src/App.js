@@ -11,6 +11,9 @@ import Pro_9 from './components/Pro_9';
 import Pro_10 from './components/Pro_10';
 import ErrorBoundary from './components/ErrorBoundary';
 import Pro_11 from './components/Pro_11';
+import Pro_12 from './components/Pro_12';
+import Pro_13 from './components/Pro_13';
+import Pro_15 from './components/Pro_15';
 
 function App() {
   return (
@@ -35,7 +38,11 @@ function App() {
         <Pro_10 heroName="Joker" />
       </ErrorBoundary> */}
 
-      <Pro_11 />
+      {/* <Pro_11 /> */}
+
+      <Pro_12 />
+      <Pro_13 />
+      <Pro_15 />
 
 
     </div>
