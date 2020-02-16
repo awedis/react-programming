@@ -61,3 +61,6 @@
   - Installations (in dev dependency):
     - npm install @testing-library/react react-test-renderer jest-dom --save-dev
   - Snapshot - compares the default first snapshot with the new ones, and when we press (u) to update the default snapshot.
+
+- 11. Dialog Box:
+  - Single Dialog & Multiple (Pro_16.js)
