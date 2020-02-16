@@ -56,3 +56,8 @@
     - Cross-site request forgery (or XSRF for short) is a method of attacking a web-hosted app in which the attacker disguises himself as a legal and trusted user to influence the interaction between the app and the user’s browser. There are many ways to execute such an attack, including XMLHttpRequest.
     - Fortunately, Axios is designed to protect against XSRF by allowing you to embed additional authentication data when making requests. This enables the server to discover requests from unauthorized locations.
   - Axios Cheat Sheet - https://kapeli.com/cheat_sheets/Axios.docset/Contents/Resources/Documents/index
+
+- 10. Jest - React Testing: (/button folder)
+  - Installations (in dev dependency):
+    - npm install @testing-library/react react-test-renderer jest-dom --save-dev
+  - Snapshot - compares the default first snapshot with the new ones, and when we press (u) to update the default snapshot.
