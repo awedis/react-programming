@@ -64,3 +64,17 @@
 
 - 11. Dialog Box:
   - Single Dialog & Multiple (Pro_16.js)
+
+- 12. Redux:
+  - Installations:
+      - npm i redux --save
+      - npm i react-redux --save
+  - Reducer holds functionality to modify the state
+  - Action is a command object(type, payload)
+  - Once the state is updated anything is subscribed to it it gets a message and updates in ui.
+  - Simple Isolated Redux only example (Pro_17.js)
+  - React & Redux Together (Pro_18.js)
+    - Store: state & reducers
+    - Provider in index.js will allow us to inject the global store
+    - Subscribe to the store so any changes should be returned to the view
+    - Be able to dispatch actions from any container
