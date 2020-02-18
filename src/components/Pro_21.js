@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
+import * as actionCreator from './store/action/actions';
 
 class Pro_21 extends Component {
     render() {
@@ -8,6 +9,7 @@ class Pro_21 extends Component {
                 <div>your age: <span>{this.props.age}</span></div>
                 <button onClick={this.props.onAgeUp}>Age Up</button>
                 <button onClick={this.props.onAgeDown}>Age Down</button>
+                {this.props.loading && <p>Loading...</p>}
             </div>
         )
     }
@@ -15,14 +17,15 @@ class Pro_21 extends Component {
 
 const mapStoreToProps = (state) => {
     return {
-        age: state.age
+        age: state.age,
+        loading: state.loading
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onAgeUp: () => dispatch({ type: 'AGE_UP', payload: 1 }),
-        onAgeDown: () => dispatch({ type: 'AGE_DOWN', payload: 1 })
+        onAgeUp: () => dispatch(actionCreator.ageUp(1)),
+        onAgeDown: () => dispatch(actionCreator.ageDown(1))
     }
 }
 
