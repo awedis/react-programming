@@ -5,10 +5,20 @@ import * as serviceWorker from './serviceWorker';
 
 // Modules
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import reducer from './components/redux/reducer';
+import { createStore, combineReducers } from 'redux';
+// import reducer from './components/redux/reducer';
+// import reducer from './components/redux/reducer_2';
 
-const store = createStore(reducer);
+// import reducer from './components/redux/reducer_3';
+import reducerA from './components/redux/reducerA';
+import reducerB from './components/redux/reducerB';
+
+const rootReducer = combineReducers({
+    rA: reducerA,
+    rB: reducerB
+})
+
+const store = createStore(rootReducer);
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 

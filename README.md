@@ -78,3 +78,5 @@
     - Provider in index.js will allow us to inject the global store
     - Subscribe to the store so any changes should be returned to the view
     - Be able to dispatch actions from any container
+  - If we click on the button we need to add a record in the history (Pro_19.js)
+  - React supports only one reducer if we want to split them we need to combine as pass it to the store (Pro_20.js)

@@ -18,6 +18,8 @@ import Button from './components/button/Button';
 import Pro_16 from './components/Pro_16';
 import './components/Pro_17';
 import Pro_18 from './components/Pro_18';
+import Pro_19 from './components/Pro_19';
+import Pro_20 from './components/Pro_20';
 
 function App() {
   return (
@@ -52,7 +54,11 @@ function App() {
 
       {/* <Pro_16 /> */}
 
-      <Pro_18 />
+      {/* <Pro_18 /> */}
+
+      {/* <Pro_19 /> */}
+
+      <Pro_20 />
 
 
     </div>
