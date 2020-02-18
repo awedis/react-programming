@@ -5,20 +5,33 @@ import * as serviceWorker from './serviceWorker';
 
 // Modules
 import { Provider } from 'react-redux';
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 // import reducer from './components/redux/reducer';
 // import reducer from './components/redux/reducer_2';
 
 // import reducer from './components/redux/reducer_3';
-import reducerA from './components/redux/reducerA';
-import reducerB from './components/redux/reducerB';
+// import reducerA from './components/redux/reducerA';
+// import reducerB from './components/redux/reducerB';
 
-const rootReducer = combineReducers({
-    rA: reducerA,
-    rB: reducerB
-})
+// const rootReducer = combineReducers({
+//     rA: reducerA,
+//     rB: reducerB
+// })
+import reducer from './components/redux/reducerMid';
 
-const store = createStore(rootReducer);
+// when the action is dispatched this will run and first it will capture the action
+// cache the action
+const logAction = store => {
+    return next => {
+        return action => {
+            const result = next(action);
+            console.log(`Caught in the middleware ${JSON.stringify(result)}`);
+            return result;
+        }
+    }
+}
+
+const store = createStore(reducer, applyMiddleware(logAction));
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 

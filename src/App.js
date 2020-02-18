@@ -20,6 +20,7 @@ import './components/Pro_17';
 import Pro_18 from './components/Pro_18';
 import Pro_19 from './components/Pro_19';
 import Pro_20 from './components/Pro_20';
+import Pro_21 from './components/Pro_21';
 
 function App() {
   return (
@@ -58,7 +59,9 @@ function App() {
 
       {/* <Pro_19 /> */}
 
-      <Pro_20 />
+      {/* <Pro_20 /> */}
+
+      <Pro_21 />
 
 
     </div>

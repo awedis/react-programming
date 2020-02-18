@@ -80,3 +80,4 @@
     - Be able to dispatch actions from any container
   - If we click on the button we need to add a record in the history (Pro_19.js)
   - React supports only one reducer if we want to split them we need to combine as pass it to the store (Pro_20.js)
+  - When we click on a button we need to save in the serve once we get a confirmation that the data is saved in the server than we can update the state. Middleware (Pro_21.js)
